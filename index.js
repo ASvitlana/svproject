@@ -1,6 +1,11 @@
-console.log(Poly);
-console.log(5467);
-console.log('Mango');
-console.log('+380502388238');
-console.log('krosh@org.ua');
-console.log('aJax');
+
+const button = document.querySelector('.button');
+const rundomNumber = document.querySelector('.number');
+
+const retunnRandomNumber = () => {
+  let number;
+  number = Math.round(Math.random() * (20 - 1) + 1);
+  rundomNumber.textContent = `Білет №: ${number}`;
+}
+
+button.addEventListener('click', retunnRandomNumber);
