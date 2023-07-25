@@ -4,7 +4,7 @@ const rundomNumber = document.querySelector('.number');
 
 const retunnRandomNumber = () => {
   let number;
-  number = Math.round(Math.random() * (20 - 1) + 1);
+  number = Math.round(Math.random() * (10 - 1) + 1);
   rundomNumber.textContent = `Білет №: ${number}`;
 }
 
